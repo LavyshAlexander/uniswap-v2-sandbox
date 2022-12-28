@@ -1,0 +1,32 @@
+Starting migrations...
+======================
+> Network name:    'ganache.dipdup.net'
+> Network id:      1671583116401
+> Block gas limit: 12000000 (0xb71b00)
+
+
+1_deploy_contracts.js
+=====================
+
+   Deploying 'FiatTokenProxy'
+   --------------------------
+   > transaction hash:    0x8272c81fd669b8a27bdfebe12a6c6c72d4734328369ea2cbbbe42c3584f7df17
+   > Blocks: 0            Seconds: 0
+   > contract address:    0xf5a85be3cdf4A0130c20B807bE86E9B1bCF5C258
+   > block number:        182
+   > block timestamp:     1672128341
+   > account:             0x22fe3122E06185729424C8bAb20EF46a157512f7
+   > balance:             999.956855275431153037
+   > gas used:            432096 (0x697e0)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001080240003456768 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.001080240003456768 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.001080240003456768 ETH
