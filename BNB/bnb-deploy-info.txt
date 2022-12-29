@@ -1,0 +1,37 @@
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Starting migrations...
+======================
+> Network name:    'ganache.dipdup.net'
+> Network id:      1671583116401
+> Block gas limit: 12000000 (0xb71b00)
+
+
+1_deploy_contracts.js
+=====================
+
+   Deploying 'BNB'
+   ---------------
+   > transaction hash:    0x12c6c06b5f32ecd541e9f76ffaaa957200c4a30abd67f9f79481f39c6e7a151e
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa
+   > block number:        194
+   > block timestamp:     1672281352
+   > account:             0x22fe3122E06185729424C8bAb20EF46a157512f7
+   > balance:             999.919518992697836365
+   > gas used:            865774 (0xd35ee)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002164435006926192 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.002164435006926192 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.002164435006926192 ETH
