@@ -32168,10 +32168,17 @@
       "links": {},
       "address": "0x12c4460b2111739c0b1a394DAE09874Ae416422c",
       "transactionHash": "0x7c80c74737ab4dd38f107ec06ad2b354ce6a07c3b1178c80601dd039fc46f9f2"
+    },
+    "1672371151916": {
+      "events": {},
+      "links": {},
+      "address": "0x4Aa08480149C610751d294A580a4874607595d38",
+      "transactionHash": "0xd6f02cf40cd1a99dcb89031cadf038caba69ea2e3dc31c5382f1b5689f796ea4"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2022-12-30T03:30:17.677Z",
+  "updatedAt": "2022-12-30T03:32:36.229Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

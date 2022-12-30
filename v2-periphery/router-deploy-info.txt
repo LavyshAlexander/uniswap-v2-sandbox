@@ -1,0 +1,32 @@
+Starting migrations...
+======================
+> Network name:    'ganache.dipdup.net'
+> Network id:      1671583116401
+> Block gas limit: 12000000 (0xb71b00)
+
+
+1_deploy_contracts.js
+=====================
+
+   Deploying 'UniswapV2Router02'
+   -----------------------------
+   > transaction hash:    0xebd3a40f3eb2a10d912762d8806e3011fc7baf8017b15349e3509cbac6b87384
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x62D5F4DCdA161c400E55C94eF7C83f366e5812C5
+   > block number:        235
+   > block timestamp:     1672372082
+   > account:             0x22fe3122E06185729424C8bAb20EF46a157512f7
+   > balance:             994.718313825560354099
+   > gas used:            3914690 (0x3bbbc2)
+   > gas price:           2.500000009 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00978672503523221 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.00978672503523221 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.00978672503523221 ETH

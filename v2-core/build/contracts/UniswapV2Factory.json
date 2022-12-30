@@ -5718,10 +5718,17 @@
       "links": {},
       "address": "0x6E466FA015E6760165564B805Ada8E6f826dEF73",
       "transactionHash": "0x2eb5383f88dab1f0dc6ed557477ccd97449ed992e4a41cf1eeed6c7179e2c6dd"
+    },
+    "1672371151916": {
+      "events": {},
+      "links": {},
+      "address": "0xe29CC724E5621dFE805f255779Eb21a6E5c0995b",
+      "transactionHash": "0x50c29540f2fdd641189af4e94208da2ecf481bf1f25d3bd6f1cc6e4d1ea5fcea"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2022-12-30T03:30:17.672Z",
+  "updatedAt": "2022-12-30T03:32:36.240Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
