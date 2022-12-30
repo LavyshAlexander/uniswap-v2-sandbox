@@ -1,0 +1,73 @@
+Compiling your contracts...
+===========================
+> Compiling ./contracts/UniswapV2Factory.sol
+> Compiling ./contracts/UniswapV2Pair.sol
+> Artifacts written to /Users/lavysh/Source/Celestia/v2-core/build/contracts
+> Compiled successfully using:
+   - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'ganache.dipdup.net'
+> Network id:      1671583116401
+> Block gas limit: 12000000 (0xb71b00)
+
+
+1_deploy_contracts.js
+=====================
+
+   Replacing 'UniswapV2ERC20'
+   --------------------------
+   > transaction hash:    0x9e53671fe2574c246fdb6f521d77621a6c987490b37414ed4a633c0bca2b6bf6
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x2f5D92DF5523Ac17285bEd5bd42a0f98AB89469c
+   > block number:        187
+   > block timestamp:     1672136820
+   > account:             0x22fe3122E06185729424C8bAb20EF46a157512f7
+   > balance:             999.937963045370697901
+   > gas used:            550086 (0x864c6)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001375215004400688 ETH
+
+
+   Replacing 'UniswapV2Pair'
+   -------------------------
+   > transaction hash:    0x7c80c74737ab4dd38f107ec06ad2b354ce6a07c3b1178c80601dd039fc46f9f2
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x12c4460b2111739c0b1a394DAE09874Ae416422c
+   > block number:        188
+   > block timestamp:     1672136828
+   > account:             0x22fe3122E06185729424C8bAb20EF46a157512f7
+   > balance:             999.932823787854252277
+   > gas used:            2055703 (0x1f5e17)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005139257516445624 ETH
+
+
+   Replacing 'UniswapV2Factory'
+   ----------------------------
+   > transaction hash:    0x2eb5383f88dab1f0dc6ed557477ccd97449ed992e4a41cf1eeed6c7179e2c6dd
+   > Blocks: 1            Seconds: 5
+   > contract address:    0x6E466FA015E6760165564B805Ada8E6f826dEF73
+   > block number:        189
+   > block timestamp:     1672136836
+   > account:             0x22fe3122E06185729424C8bAb20EF46a157512f7
+   > balance:             999.926814175335021517
+   > gas used:            2403845 (0x24ae05)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00600961251923076 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.012524085040077072 ETH
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.012524085040077072 ETH
+
+
