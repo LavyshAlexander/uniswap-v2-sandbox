@@ -1,3 +1,43 @@
+Starting migrations...
+======================
+> Network name:    'ganache.dipdup.net'
+> Network id:      1671583116401
+> Block gas limit: 12000000 (0xb71b00)
+
+
+1_deploy_contracts.js
+=====================
+
+   Replacing 'WETH9'
+   -----------------
+   > transaction hash:    0xb0d56ef29de894d874d160892b624ae81e869c5600b1aec7e9e5b7240fe17f82
+   > Blocks: 0            Seconds: 0
+   > contract address:    0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857
+   > block number:        291
+   > block timestamp:     1674643582
+   > account:             0x22fe3122E06185729424C8bAb20EF46a157512f7
+   > balance:             994.708423207056168683
+   > gas used:            498011 (0x7995b)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001245027503984088 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.001245027503984088 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.001245027503984088 ETH
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 Compiling your contracts...
 ===========================
 > Everything is up to date, there is nothing to compile.

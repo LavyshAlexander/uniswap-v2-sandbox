@@ -1,0 +1,43 @@
+truffle(ganache.dipdup.net)> w.name()
+'Wrapped Ether'
+truffle(ganache.dipdup.net)> w.symbol()
+'WETH'
+
+const value = web3.utils.toWei('95', 'ether')
+const accs = await web3.eth.getAccounts()
+w.deposit({ value: value, from: accs[10] })
+
+{
+  tx: '0xa3e5d2a3ad9d13cb996cff43c0ec2b6db7e03e793c994491807adc96667c9645',
+  receipt: {
+    transactionHash: '0xa3e5d2a3ad9d13cb996cff43c0ec2b6db7e03e793c994491807adc96667c9645',
+    transactionIndex: 0,
+    blockNumber: 292,
+    blockHash: '0xc98e93d168d3195859dfee48759e2c8c5a88eaf4e82f9609c9a1d29e6030fe9d',
+    from: '0xab917250ac6975e3eebd25298cce9093a69e4068',
+    to: '0xfa316731ab86b6ad2f9ddce18395e17e4f1dd857',
+    cumulativeGasUsed: 45066,
+    gasUsed: 45066,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000008000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000040000040000000000001000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0xc98e93d168d3195859dfee48759e2c8c5a88eaf4e82f9609c9a1d29e6030fe9d',
+      blockNumber: 292,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0xa3e5d2a3ad9d13cb996cff43c0ec2b6db7e03e793c994491807adc96667c9645',
+      transactionIndex: 0,
+      id: 'log_c12362da',
+      event: 'Deposit',
+      args: [Result]
+    }
+  ]
+}

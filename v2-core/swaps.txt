@@ -1,0 +1,1056 @@
+wb.sync()
+{
+  tx: '0xac82c3b507b0883e054a4f977b5239efc3ee0de6500bb21e1e4c70ceb16078e0',
+  receipt: {
+    transactionHash: '0xac82c3b507b0883e054a4f977b5239efc3ee0de6500bb21e1e4c70ceb16078e0',
+    transactionIndex: 0,
+    blockNumber: 305,
+    blockHash: '0x72f0db0e7eaecc5088d324d05d82c46b032e98d93c9952b53fa8fea510617bb7',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 56431,
+    gasUsed: 56431,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200001000000000000000000000000000000000000000000000000000000000040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0x72f0db0e7eaecc5088d324d05d82c46b032e98d93c9952b53fa8fea510617bb7',
+      blockNumber: 305,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0xac82c3b507b0883e054a4f977b5239efc3ee0de6500bb21e1e4c70ceb16078e0',
+      transactionIndex: 0,
+      id: 'log_d484921d',
+      event: 'Sync',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> b.transfer(w_b_address, 10)
+{
+  tx: '0xd24afe11f89243b2f194b213c60a2dcbf931be831710b3b4308dd94bfa627d84',
+  receipt: {
+    transactionHash: '0xd24afe11f89243b2f194b213c60a2dcbf931be831710b3b4308dd94bfa627d84',
+    transactionIndex: 0,
+    blockNumber: 306,
+    blockHash: '0xb166d9298178a1e973cb8b316146ce96cf87daab90fafbdea83a675f07373198',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0xb166d9298178a1e973cb8b316146ce96cf87daab90fafbdea83a675f07373198',
+      blockNumber: 306,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0xd24afe11f89243b2f194b213c60a2dcbf931be831710b3b4308dd94bfa627d84',
+      transactionIndex: 0,
+      id: 'log_4914995f',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[1], [])
+{
+  tx: '0xb6a92982e659ab8affd07fe6e1325d2a5c3b16387f57c04a327ca3497d427993',
+  receipt: {
+    transactionHash: '0xb6a92982e659ab8affd07fe6e1325d2a5c3b16387f57c04a327ca3497d427993',
+    transactionIndex: 0,
+    blockNumber: 307,
+    blockHash: '0xd54579944a0b9c6a345fca1f316d4e079e2697744e0a2d95c290d927806e372d',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 86768,
+    gasUsed: 86768,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00200000000000000000000080000000000000000000000000000000000000000000000000000001000000000010000000000000000000000000000000000000000000000000000000800008000000200000000000000000000000000000000000000002000000000000000000000000000000014000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000008000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000000000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0xd54579944a0b9c6a345fca1f316d4e079e2697744e0a2d95c290d927806e372d',
+      blockNumber: 307,
+      logIndex: 0,
+truffle(ganache.dipdup.net)> b.transfer(w_b_address, 10)
+{
+  tx: '0x53f6a9b3bf9d604039b16c2c979154d5253541e8287d7a4d95231a55ebb7cacb',
+  receipt: {
+    transactionHash: '0x53f6a9b3bf9d604039b16c2c979154d5253541e8287d7a4d95231a55ebb7cacb',
+    transactionIndex: 0,
+    blockNumber: 308,
+    blockHash: '0x3b73537d5e75118a9659078dca1250cd6346281453ffa9b58aefad6c7a3a5df1',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x3b73537d5e75118a9659078dca1250cd6346281453ffa9b58aefad6c7a3a5df1',
+      blockNumber: 308,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x53f6a9b3bf9d604039b16c2c979154d5253541e8287d7a4d95231a55ebb7cacb',
+      transactionIndex: 0,
+      id: 'log_b6b0d5c2',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[1], [])
+{
+  tx: '0x37c5e1e915cff4cae805b750a917ef3442d40b4a5d60dcdf3132e71552ce1e6f',
+  receipt: {
+    transactionHash: '0x37c5e1e915cff4cae805b750a917ef3442d40b4a5d60dcdf3132e71552ce1e6f',
+    transactionIndex: 0,
+    blockNumber: 309,
+    blockHash: '0xb37e3ae6c9df9b4da1e2b715203e0e1b88cea9068ece6cba989d7cb9aca98993',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 86768,
+    gasUsed: 86768,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00200000000000000000000080000000000000000000000000000000000000000000000000000001000000000010000000000000000000000000000000000000000000000000000000800008000000200000000000000000000000000000000000000002000000000000000000000000000000014000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000008000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000000000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0xb37e3ae6c9df9b4da1e2b715203e0e1b88cea9068ece6cba989d7cb9aca98993',
+      blockNumber: 309,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x37c5e1e915cff4cae805b750a917ef3442d40b4a5d60dcdf3132e71552ce1e6f',
+      transactionIndex: 0,
+      id: 'log_95277535',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0xb37e3ae6c9df9b4da1e2b715203e0e1b88cea9068ece6cba989d7cb9aca98993',
+      blockNumber: 309,
+      logIndex: 1,
+      removed: false,
+      transactionHash: '0x37c5e1e915cff4cae805b750a917ef3442d40b4a5d60dcdf3132e71552ce1e6f',
+      transactionIndex: 0,
+      id: 'log_86b34682',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xb37e3ae6c9df9b4da1e2b715203e0e1b88cea9068ece6cba989d7cb9aca98993',
+      blockNumber: 309,
+      logIndex: 2,
+      removed: false,
+      transactionHash: '0x37c5e1e915cff4cae805b750a917ef3442d40b4a5d60dcdf3132e71552ce1e6f',
+      transactionIndex: 0,
+      id: 'log_7446119e',
+      event: 'Sync',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xb37e3ae6c9df9b4da1e2b715203e0e1b88cea9068ece6cba989d7cb9aca98993',
+      blockNumber: 309,
+      logIndex: 3,
+      removed: false,
+      transactionHash: '0x37c5e1e915cff4cae805b750a917ef3442d40b4a5d60dcdf3132e71552ce1e6f',
+      transactionIndex: 0,
+      id: 'log_a0f85949',
+      event: 'Swap',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> b.transfer(w_b_address, 10)
+{
+  tx: '0x92404c0e175c04dc584c97c6767d24d31e7ae1eb9e72dd15645a91a97680ea85',
+  receipt: {
+    transactionHash: '0x92404c0e175c04dc584c97c6767d24d31e7ae1eb9e72dd15645a91a97680ea85',
+    transactionIndex: 0,
+    blockNumber: 310,
+    blockHash: '0x1e40aa31ee3d365cf907cda6c7c86fed8a562aa3a215ea859db3a5df0ad234e6',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x1e40aa31ee3d365cf907cda6c7c86fed8a562aa3a215ea859db3a5df0ad234e6',
+      blockNumber: 310,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x92404c0e175c04dc584c97c6767d24d31e7ae1eb9e72dd15645a91a97680ea85',
+      transactionIndex: 0,
+      id: 'log_dacd82e2',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[1], [])
+{
+  tx: '0xbb34fff68ee7d082b5fada7d0d0d837ce84351302d3e866f33f7dd08c8ce54c8',
+  receipt: {
+    transactionHash: '0xbb34fff68ee7d082b5fada7d0d0d837ce84351302d3e866f33f7dd08c8ce54c8',
+    transactionIndex: 0,
+    blockNumber: 311,
+    blockHash: '0xa4820c3fb7a91f1fa075c813c0f4a2ea27d92f0cf119bc8ed2f806c3b66a82c5',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 86768,
+    gasUsed: 86768,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00200000000000000000000080000000000000000000000000000000000000000000000000000001000000000010000000000000000000000000000000000000000000000000000000800008000000200000000000000000000000000000000000000002000000000000000000000000000000014000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000008000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000000000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0xa4820c3fb7a91f1fa075c813c0f4a2ea27d92f0cf119bc8ed2f806c3b66a82c5',
+      blockNumber: 311,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0xbb34fff68ee7d082b5fada7d0d0d837ce84351302d3e866f33f7dd08c8ce54c8',
+      transactionIndex: 0,
+      id: 'log_0fd50fe8',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0xa4820c3fb7a91f1fa075c813c0f4a2ea27d92f0cf119bc8ed2f806c3b66a82c5',
+      blockNumber: 311,
+      logIndex: 1,
+      removed: false,
+      transactionHash: '0xbb34fff68ee7d082b5fada7d0d0d837ce84351302d3e866f33f7dd08c8ce54c8',
+      transactionIndex: 0,
+      id: 'log_0d06ee3f',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xa4820c3fb7a91f1fa075c813c0f4a2ea27d92f0cf119bc8ed2f806c3b66a82c5',
+      blockNumber: 311,
+      logIndex: 2,
+      removed: false,
+      transactionHash: '0xbb34fff68ee7d082b5fada7d0d0d837ce84351302d3e866f33f7dd08c8ce54c8',
+      transactionIndex: 0,
+      id: 'log_7235dda5',
+      event: 'Sync',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xa4820c3fb7a91f1fa075c813c0f4a2ea27d92f0cf119bc8ed2f806c3b66a82c5',
+      blockNumber: 311,
+      logIndex: 3,
+      removed: false,
+      transactionHash: '0xbb34fff68ee7d082b5fada7d0d0d837ce84351302d3e866f33f7dd08c8ce54c8',
+      transactionIndex: 0,
+      id: 'log_5ecff840',
+      event: 'Swap',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> b.transfer(w_b_address, 10)
+{
+  tx: '0x7b0761c4ad9df885ac40afb49e6bcbe8ce26dda86b5ab252f5737e974889cc3d',
+  receipt: {
+    transactionHash: '0x7b0761c4ad9df885ac40afb49e6bcbe8ce26dda86b5ab252f5737e974889cc3d',
+    transactionIndex: 0,
+    blockNumber: 312,
+    blockHash: '0x1bdc7a03b9a459ebaef4b8b85a9ad05c06b0aa0a38aa8176e9f96cc180066b1c',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x1bdc7a03b9a459ebaef4b8b85a9ad05c06b0aa0a38aa8176e9f96cc180066b1c',
+      blockNumber: 312,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x7b0761c4ad9df885ac40afb49e6bcbe8ce26dda86b5ab252f5737e974889cc3d',
+      transactionIndex: 0,
+      id: 'log_fad19fb5',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[1], [])
+{
+  tx: '0x3995426bbce752e884e4d013e7d6a1c0197c9f7236c224b55936bc378ba29a81',
+  receipt: {
+    transactionHash: '0x3995426bbce752e884e4d013e7d6a1c0197c9f7236c224b55936bc378ba29a81',
+    transactionIndex: 0,
+    blockNumber: 313,
+    blockHash: '0xd831cf7840ef7b6fa02b85c80d614b32e91100ceead9d36a010294e081a9a895',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 86768,
+    gasUsed: 86768,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00200000000000000000000080000000000000000000000000000000000000000000000000000001000000000010000000000000000000000000000000000000000000000000000000800008000000200000000000000000000000000000000000000002000000000000000000000000000000014000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000008000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000000000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0xd831cf7840ef7b6fa02b85c80d614b32e91100ceead9d36a010294e081a9a895',
+      blockNumber: 313,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x3995426bbce752e884e4d013e7d6a1c0197c9f7236c224b55936bc378ba29a81',
+      transactionIndex: 0,
+      id: 'log_81f2bbc9',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0xd831cf7840ef7b6fa02b85c80d614b32e91100ceead9d36a010294e081a9a895',
+      blockNumber: 313,
+      logIndex: 1,
+      removed: false,
+      transactionHash: '0x3995426bbce752e884e4d013e7d6a1c0197c9f7236c224b55936bc378ba29a81',
+      transactionIndex: 0,
+      id: 'log_e6827346',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xd831cf7840ef7b6fa02b85c80d614b32e91100ceead9d36a010294e081a9a895',
+      blockNumber: 313,
+      logIndex: 2,
+      removed: false,
+      transactionHash: '0x3995426bbce752e884e4d013e7d6a1c0197c9f7236c224b55936bc378ba29a81',
+      transactionIndex: 0,
+      id: 'log_025c6436',
+      event: 'Sync',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xd831cf7840ef7b6fa02b85c80d614b32e91100ceead9d36a010294e081a9a895',
+      blockNumber: 313,
+      logIndex: 3,
+      removed: false,
+      transactionHash: '0x3995426bbce752e884e4d013e7d6a1c0197c9f7236c224b55936bc378ba29a81',
+      transactionIndex: 0,
+      id: 'log_5b438137',
+      event: 'Swap',
+      args: [Result]
+    }
+  ]
+}
+
+// accs[2]
+
+truffle(ganache.dipdup.net)> b.transfer(w_b_address, 10)
+{
+  tx: '0x213d048a1b15dee4ef1019c9c373fbebb9d334757a63f4a5367af83baeaf36b6',
+  receipt: {
+    transactionHash: '0x213d048a1b15dee4ef1019c9c373fbebb9d334757a63f4a5367af83baeaf36b6',
+    transactionIndex: 0,
+    blockNumber: 314,
+    blockHash: '0xc02f099838f6f28c8425327f73a32e690f48c65e9168e19dbd45a777e39919c1',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0xc02f099838f6f28c8425327f73a32e690f48c65e9168e19dbd45a777e39919c1',
+      blockNumber: 314,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x213d048a1b15dee4ef1019c9c373fbebb9d334757a63f4a5367af83baeaf36b6',
+      transactionIndex: 0,
+      id: 'log_832b4815',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[2], [])
+{
+  tx: '0x3a34b83418aa19703ae6bce46ff926a7068a21b505d9da5e243e6a05551c66ea',
+  receipt: {
+    transactionHash: '0x3a34b83418aa19703ae6bce46ff926a7068a21b505d9da5e243e6a05551c66ea',
+    transactionIndex: 0,
+    blockNumber: 315,
+    blockHash: '0xc3970ee465b364151ea0a2f171d503235b81bd1700ee7aebd9cbb90453d36666',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 120968,
+    gasUsed: 120968,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00200000000000000080000080000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000800088000000200000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000004000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0xc3970ee465b364151ea0a2f171d503235b81bd1700ee7aebd9cbb90453d36666',
+      blockNumber: 315,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x3a34b83418aa19703ae6bce46ff926a7068a21b505d9da5e243e6a05551c66ea',
+      transactionIndex: 0,
+      id: 'log_9d3f3148',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0xc3970ee465b364151ea0a2f171d503235b81bd1700ee7aebd9cbb90453d36666',
+      blockNumber: 315,
+      logIndex: 1,
+      removed: false,
+      transactionHash: '0x3a34b83418aa19703ae6bce46ff926a7068a21b505d9da5e243e6a05551c66ea',
+      transactionIndex: 0,
+      id: 'log_6bc7b08d',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xc3970ee465b364151ea0a2f171d503235b81bd1700ee7aebd9cbb90453d36666',
+      blockNumber: 315,
+      logIndex: 2,
+      removed: false,
+      transactionHash: '0x3a34b83418aa19703ae6bce46ff926a7068a21b505d9da5e243e6a05551c66ea',
+      transactionIndex: 0,
+      id: 'log_dc7c4d94',
+      event: 'Sync',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xc3970ee465b364151ea0a2f171d503235b81bd1700ee7aebd9cbb90453d36666',
+      blockNumber: 315,
+      logIndex: 3,
+      removed: false,
+      transactionHash: '0x3a34b83418aa19703ae6bce46ff926a7068a21b505d9da5e243e6a05551c66ea',
+      transactionIndex: 0,
+      id: 'log_5fb60557',
+      event: 'Swap',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> b.transfer(w_b_address, 10)
+{
+  tx: '0x5d96f1805ae36ec45bc83df8e0e6418dc9cb1c3568778412755cd0a517c1d91e',
+  receipt: {
+    transactionHash: '0x5d96f1805ae36ec45bc83df8e0e6418dc9cb1c3568778412755cd0a517c1d91e',
+    transactionIndex: 0,
+    blockNumber: 316,
+    blockHash: '0x3f680c4947e037b5795764eb5869d151d8fd6c1ae6904fa916e21c032e91c24e',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x3f680c4947e037b5795764eb5869d151d8fd6c1ae6904fa916e21c032e91c24e',
+      blockNumber: 316,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x5d96f1805ae36ec45bc83df8e0e6418dc9cb1c3568778412755cd0a517c1d91e',
+      transactionIndex: 0,
+      id: 'log_695724f3',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[2], [])
+{
+  tx: '0x9a496612dc9b1928b3277d0bf7d4b0883364a0cdddfd91a44ebd3cd30fad7df6',
+  receipt: {
+    transactionHash: '0x9a496612dc9b1928b3277d0bf7d4b0883364a0cdddfd91a44ebd3cd30fad7df6',
+    transactionIndex: 0,
+    blockNumber: 317,
+    blockHash: '0x2505b5dab616e4d5d8b5c56499a045526cf1df1e565fcd6293da0c7ac2019e31',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 86768,
+    gasUsed: 86768,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00200000000000000080000080000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000800088000000200000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000004000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x2505b5dab616e4d5d8b5c56499a045526cf1df1e565fcd6293da0c7ac2019e31',
+      blockNumber: 317,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x9a496612dc9b1928b3277d0bf7d4b0883364a0cdddfd91a44ebd3cd30fad7df6',
+      transactionIndex: 0,
+      id: 'log_c003bb5d',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0x2505b5dab616e4d5d8b5c56499a045526cf1df1e565fcd6293da0c7ac2019e31',
+      blockNumber: 317,
+      logIndex: 1,
+      removed: false,
+      transactionHash: '0x9a496612dc9b1928b3277d0bf7d4b0883364a0cdddfd91a44ebd3cd30fad7df6',
+      transactionIndex: 0,
+      id: 'log_122a33b3',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0x2505b5dab616e4d5d8b5c56499a045526cf1df1e565fcd6293da0c7ac2019e31',
+      blockNumber: 317,
+      logIndex: 2,
+      removed: false,
+      transactionHash: '0x9a496612dc9b1928b3277d0bf7d4b0883364a0cdddfd91a44ebd3cd30fad7df6',
+      transactionIndex: 0,
+      id: 'log_d289b0e0',
+      event: 'Sync',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0x2505b5dab616e4d5d8b5c56499a045526cf1df1e565fcd6293da0c7ac2019e31',
+      blockNumber: 317,
+      logIndex: 3,
+      removed: false,
+      transactionHash: '0x9a496612dc9b1928b3277d0bf7d4b0883364a0cdddfd91a44ebd3cd30fad7df6',
+      transactionIndex: 0,
+      id: 'log_c187f2b9',
+      event: 'Swap',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> b.transfer(w_b_address, 10)
+{
+  tx: '0x17e75ef50fba7bfd93f868bde98ff5e9da4a8208a579cdeb04c2fdb638b66c85',
+  receipt: {
+    transactionHash: '0x17e75ef50fba7bfd93f868bde98ff5e9da4a8208a579cdeb04c2fdb638b66c85',
+    transactionIndex: 0,
+    blockNumber: 318,
+    blockHash: '0xee1810de0dde65f99dcd853037c0867de30f251030f28d52a26f54e3a029586e',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0xee1810de0dde65f99dcd853037c0867de30f251030f28d52a26f54e3a029586e',
+      blockNumber: 318,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x17e75ef50fba7bfd93f868bde98ff5e9da4a8208a579cdeb04c2fdb638b66c85',
+      transactionIndex: 0,
+      id: 'log_ec599c44',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[2], [])
+{
+  tx: '0x5cf183bbff8dfa9b468f8f0103b49d5fd893eac218450716d8b178cc1550b3f6',
+  receipt: {
+    transactionHash: '0x5cf183bbff8dfa9b468f8f0103b49d5fd893eac218450716d8b178cc1550b3f6',
+    transactionIndex: 0,
+    blockNumber: 319,
+    blockHash: '0x95a75f4cf59d06342e3566e6871d1969b7005c053d9f05b3925f713ca56cf11b',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 86768,
+    gasUsed: 86768,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00200000000000000080000080000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000800088000000200000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000004000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x95a75f4cf59d06342e3566e6871d1969b7005c053d9f05b3925f713ca56cf11b',
+      blockNumber: 319,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x5cf183bbff8dfa9b468f8f0103b49d5fd893eac218450716d8b178cc1550b3f6',
+      transactionIndex: 0,
+      id: 'log_5562febb',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0x95a75f4cf59d06342e3566e6871d1969b7005c053d9f05b3925f713ca56cf11b',
+      blockNumber: 319,
+      logIndex: 1,
+      removed: false,
+      transactionHash: '0x5cf183bbff8dfa9b468f8f0103b49d5fd893eac218450716d8b178cc1550b3f6',
+      transactionIndex: 0,
+      id: 'log_41e0985f',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0x95a75f4cf59d06342e3566e6871d1969b7005c053d9f05b3925f713ca56cf11b',
+      blockNumber: 319,
+      logIndex: 2,
+      removed: false,
+      transactionHash: '0x5cf183bbff8dfa9b468f8f0103b49d5fd893eac218450716d8b178cc1550b3f6',
+      transactionIndex: 0,
+      id: 'log_7238af53',
+      event: 'Sync',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0x95a75f4cf59d06342e3566e6871d1969b7005c053d9f05b3925f713ca56cf11b',
+      blockNumber: 319,
+      logIndex: 3,
+      removed: false,
+      transactionHash: '0x5cf183bbff8dfa9b468f8f0103b49d5fd893eac218450716d8b178cc1550b3f6',
+      transactionIndex: 0,
+      id: 'log_c688bf76',
+      event: 'Swap',
+      args: [Result]
+    }
+  ]
+}
+
+// accs[3]
+
+b.transfer(w_b_address, 10)
+{
+  tx: '0xbb775e62952338735e37cb685f909498825b2eedc290866072bc2f720c9baaf2',
+  receipt: {
+    transactionHash: '0xbb775e62952338735e37cb685f909498825b2eedc290866072bc2f720c9baaf2',
+    transactionIndex: 0,
+    blockNumber: 320,
+    blockHash: '0x52c60cc675e858bcaf2305bc3258a30f17d4731ff31762ca23d0bfe0ce930f71',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x52c60cc675e858bcaf2305bc3258a30f17d4731ff31762ca23d0bfe0ce930f71',
+      blockNumber: 320,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0xbb775e62952338735e37cb685f909498825b2eedc290866072bc2f720c9baaf2',
+      transactionIndex: 0,
+      id: 'log_b2b93b95',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[3], [])
+{
+  tx: '0x45e1dfeb77e8b21d6fcf177dd2c3e4fa8b2dae7830cbf0224d755c46a1cad9b1',
+  receipt: {
+    transactionHash: '0x45e1dfeb77e8b21d6fcf177dd2c3e4fa8b2dae7830cbf0224d755c46a1cad9b1',
+    transactionIndex: 0,
+    blockNumber: 321,
+    blockHash: '0x93935712357376f28428598a5883fc4720e4772c053b38a5e54b8cdcf8cdc274',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 120968,
+    gasUsed: 120968,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00220000000000000000000080000000000000000000000000000000000000000000000000000000000200000010000000000000000000000000000000000000000000000000000000800008000000200000000000000080000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000000000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x93935712357376f28428598a5883fc4720e4772c053b38a5e54b8cdcf8cdc274',
+      blockNumber: 321,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x45e1dfeb77e8b21d6fcf177dd2c3e4fa8b2dae7830cbf0224d755c46a1cad9b1',
+      transactionIndex: 0,
+      id: 'log_b2f1ee88',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0x93935712357376f28428598a5883fc4720e4772c053b38a5e54b8cdcf8cdc274',
+      blockNumber: 321,
+      logIndex: 1,
+      removed: false,
+      transactionHash: '0x45e1dfeb77e8b21d6fcf177dd2c3e4fa8b2dae7830cbf0224d755c46a1cad9b1',
+      transactionIndex: 0,
+      id: 'log_4a974b52',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0x93935712357376f28428598a5883fc4720e4772c053b38a5e54b8cdcf8cdc274',
+      blockNumber: 321,
+      logIndex: 2,
+      removed: false,
+      transactionHash: '0x45e1dfeb77e8b21d6fcf177dd2c3e4fa8b2dae7830cbf0224d755c46a1cad9b1',
+      transactionIndex: 0,
+      id: 'log_fc5b015f',
+      event: 'Sync',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0x93935712357376f28428598a5883fc4720e4772c053b38a5e54b8cdcf8cdc274',
+      blockNumber: 321,
+      logIndex: 3,
+      removed: false,
+      transactionHash: '0x45e1dfeb77e8b21d6fcf177dd2c3e4fa8b2dae7830cbf0224d755c46a1cad9b1',
+      transactionIndex: 0,
+      id: 'log_efdb836f',
+      event: 'Swap',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> b.transfer(w_b_address, 10)
+{
+  tx: '0xc33a7f9c2e664db367aa4d0bbdc123d0cf541d734a2b0882da4ebc5b1c8ca130',
+  receipt: {
+    transactionHash: '0xc33a7f9c2e664db367aa4d0bbdc123d0cf541d734a2b0882da4ebc5b1c8ca130',
+    transactionIndex: 0,
+    blockNumber: 322,
+    blockHash: '0x1cb27d84282ac2e71325ee5637cbd528d8a4b7cf21a2aaa9083f36671d605e2f',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x1cb27d84282ac2e71325ee5637cbd528d8a4b7cf21a2aaa9083f36671d605e2f',
+      blockNumber: 322,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0xc33a7f9c2e664db367aa4d0bbdc123d0cf541d734a2b0882da4ebc5b1c8ca130',
+      transactionIndex: 0,
+      id: 'log_9fbcc005',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[3], [])
+{
+  tx: '0x88f0e18efb5abe734e193169c5eb8b0e589eb82c63459485d60ba6a789e2f38d',
+  receipt: {
+    transactionHash: '0x88f0e18efb5abe734e193169c5eb8b0e589eb82c63459485d60ba6a789e2f38d',
+    transactionIndex: 0,
+    blockNumber: 323,
+    blockHash: '0xdfff87c4df34a1940c1c34dc9981782828c05795645a6989010cd2889a4ceb82',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 86768,
+    gasUsed: 86768,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00220000000000000000000080000000000000000000000000000000000000000000000000000000000200000010000000000000000000000000000000000000000000000000000000800008000000200000000000000080000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000000000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0xdfff87c4df34a1940c1c34dc9981782828c05795645a6989010cd2889a4ceb82',
+      blockNumber: 323,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x88f0e18efb5abe734e193169c5eb8b0e589eb82c63459485d60ba6a789e2f38d',
+      transactionIndex: 0,
+      id: 'log_7234e030',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0xdfff87c4df34a1940c1c34dc9981782828c05795645a6989010cd2889a4ceb82',
+      blockNumber: 323,
+      logIndex: 1,
+      removed: false,
+      transactionHash: '0x88f0e18efb5abe734e193169c5eb8b0e589eb82c63459485d60ba6a789e2f38d',
+      transactionIndex: 0,
+      id: 'log_348ac62e',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xdfff87c4df34a1940c1c34dc9981782828c05795645a6989010cd2889a4ceb82',
+      blockNumber: 323,
+      logIndex: 2,
+      removed: false,
+      transactionHash: '0x88f0e18efb5abe734e193169c5eb8b0e589eb82c63459485d60ba6a789e2f38d',
+      transactionIndex: 0,
+      id: 'log_994a6ec7',
+      event: 'Sync',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0xdfff87c4df34a1940c1c34dc9981782828c05795645a6989010cd2889a4ceb82',
+      blockNumber: 323,
+      logIndex: 3,
+      removed: false,
+      transactionHash: '0x88f0e18efb5abe734e193169c5eb8b0e589eb82c63459485d60ba6a789e2f38d',
+      transactionIndex: 0,
+      id: 'log_3fab7e35',
+      event: 'Swap',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> b.transfer(w_b_address, 10)
+{
+  tx: '0x171589d7f50e5d1e9fbc9c83960dda94a2bd7c57ae6f8e6ec5218d7c1aea4d0c',
+  receipt: {
+    transactionHash: '0x171589d7f50e5d1e9fbc9c83960dda94a2bd7c57ae6f8e6ec5218d7c1aea4d0c',
+    transactionIndex: 0,
+    blockNumber: 324,
+    blockHash: '0x4fd454fd5644c29d85cb265bfc364e70aab164a9bdad2fc7b6d5077c8c47dd34',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0x961afedada01062c4d9cbf1ef72f6e2f5edf3aaa',
+    cumulativeGasUsed: 35326,
+    gasUsed: 35326,
+    contractAddress: null,
+    logs: [ [Object] ],
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800008000000000000000000000000000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000200000000000000000000000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x4fd454fd5644c29d85cb265bfc364e70aab164a9bdad2fc7b6d5077c8c47dd34',
+      blockNumber: 324,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x171589d7f50e5d1e9fbc9c83960dda94a2bd7c57ae6f8e6ec5218d7c1aea4d0c',
+      transactionIndex: 0,
+      id: 'log_7b2a4db4',
+      event: 'Transfer',
+      args: [Result]
+    }
+  ]
+}
+truffle(ganache.dipdup.net)> wb.swap(1, 1, accs[3], [])
+{
+  tx: '0x04ad1fa5e64238662d0651587a785f436ced8619915dd1d67aae9bdeec1d9ec0',
+  receipt: {
+    transactionHash: '0x04ad1fa5e64238662d0651587a785f436ced8619915dd1d67aae9bdeec1d9ec0',
+    transactionIndex: 0,
+    blockNumber: 325,
+    blockHash: '0x9f0105520a409c0ddba6b2c86a1b6f64a01b854f0395a3fb55388a3f9a42c178',
+    from: '0x22fe3122e06185729424c8bab20ef46a157512f7',
+    to: '0xdde68dd55e4bf29367f3177c945e5f6799406088',
+    cumulativeGasUsed: 86768,
+    gasUsed: 86768,
+    contractAddress: null,
+    logs: [ [Object], [Object], [Object], [Object] ],
+    logsBloom: '0x00220000000000000000000080000000000000000000000000000000000000000000000000000000000200000010000000000000000000000000000000000000000000000000000000800008000000200000000000000080000000000000000000000002000000000000000000000000000000010000000000000010000004080000000000000000000040000040000000000000000000080000004000000000000000000000000000400000000000000000000000000000000000000000000800000002000000000000000000000000000000000210001000000000000000000000000000000000000000000000000000000200040000000000000080000000',
+    status: true,
+    effectiveGasPrice: 2500000008,
+    type: '0x2',
+    rawLogs: [ [Object], [Object], [Object], [Object] ]
+  },
+  logs: [
+    {
+      address: '0x961AfEDadA01062c4D9CBf1ef72F6E2F5eDf3aaa',
+      blockHash: '0x9f0105520a409c0ddba6b2c86a1b6f64a01b854f0395a3fb55388a3f9a42c178',
+      blockNumber: 325,
+      logIndex: 0,
+      removed: false,
+      transactionHash: '0x04ad1fa5e64238662d0651587a785f436ced8619915dd1d67aae9bdeec1d9ec0',
+      transactionIndex: 0,
+      id: 'log_8da1562b',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xFa316731ab86b6AD2f9dDce18395e17E4f1DD857',
+      blockHash: '0x9f0105520a409c0ddba6b2c86a1b6f64a01b854f0395a3fb55388a3f9a42c178',
+      blockNumber: 325,
+      logIndex: 1,
+      removed: false,
+      transactionHash: '0x04ad1fa5e64238662d0651587a785f436ced8619915dd1d67aae9bdeec1d9ec0',
+      transactionIndex: 0,
+      id: 'log_35c7fff9',
+      event: 'Transfer',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0x9f0105520a409c0ddba6b2c86a1b6f64a01b854f0395a3fb55388a3f9a42c178',
+      blockNumber: 325,
+      logIndex: 2,
+      removed: false,
+      transactionHash: '0x04ad1fa5e64238662d0651587a785f436ced8619915dd1d67aae9bdeec1d9ec0',
+      transactionIndex: 0,
+      id: 'log_a6939a36',
+      event: 'Sync',
+      args: [Result]
+    },
+    {
+      address: '0xddE68dd55E4BF29367F3177C945E5F6799406088',
+      blockHash: '0x9f0105520a409c0ddba6b2c86a1b6f64a01b854f0395a3fb55388a3f9a42c178',
+      blockNumber: 325,
+      logIndex: 3,
+      removed: false,
+      transactionHash: '0x04ad1fa5e64238662d0651587a785f436ced8619915dd1d67aae9bdeec1d9ec0',
+      transactionIndex: 0,
+      id: 'log_28e7c1ff',
+      event: 'Swap',
+      args: [Result]
+    }
+  ]
+}

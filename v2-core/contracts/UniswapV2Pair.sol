@@ -60,8 +60,6 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
 
     constructor() public {
         factory = msg.sender;
-        reserve0 = 10**5;
-        reserve1 = 10**5;
     }
 
     // called once by the factory at time of deployment
@@ -175,13 +173,28 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
         balance0 = IERC20(_token0).balanceOf(address(this));
         balance1 = IERC20(_token1).balanceOf(address(this));
         }
+
         uint amount0In = balance0 > _reserve0 - amount0Out ? balance0 - (_reserve0 - amount0Out) : 0;
         uint amount1In = balance1 > _reserve1 - amount1Out ? balance1 - (_reserve1 - amount1Out) : 0;
-        require(amount0In > 0 || amount1In > 0, 'UniswapV2: INSUFFICIENT_INPUT_AMOUNT');
+
+        {
+        string memory firstParamData = strConcat(uint2str(_reserve0), " - ", uint2str(balance0), " - ", uint2str(amount0In));
+        string memory secondParamData = strConcat(uint2str(_reserve1), " - ", uint2str(balance1), " - ", uint2str(amount1In));
+        string memory INSUFFICIENT_INPUT_AMOUNT_ERROR = strConcat('UniswapV2: INSUFFICIENT_INPUT_AMOUNT ', firstParamData, " | ",  secondParamData);
+
+        require(amount0In > 0 || amount1In > 0, INSUFFICIENT_INPUT_AMOUNT_ERROR);
+        }
+
         { // scope for reserve{0,1}Adjusted, avoids stack too deep errors
         uint balance0Adjusted = balance0.mul(1000).sub(amount0In.mul(3));
         uint balance1Adjusted = balance1.mul(1000).sub(amount1In.mul(3));
-        require(balance0Adjusted.mul(balance1Adjusted) >= uint(_reserve0).mul(_reserve1).mul(1000**2), 'UniswapV2: K');
+
+        string memory balance0Info = strConcat(uint2str(balance0.mul(1000)), "-", uint2str(amount0In.mul(3)), "=", uint2str(balance0Adjusted));
+        string memory balance1Info = strConcat(uint2str(balance1.mul(1000)), "-", uint2str(amount1In.mul(3)), "=", uint2str(balance1Adjusted));
+        string memory balancesInfo = strConcat("balance0Info: ", balance0Info, ";", "balance1Info:", balance1Info);
+        string memory balancesKError = strConcat('UniswapV2: K', balancesInfo);
+
+        require(balance0Adjusted.mul(balance1Adjusted) >= uint(_reserve0).mul(_reserve1).mul(1000**2), balancesKError);
         }
 
         _update(balance0, balance1, _reserve0, _reserve1);
@@ -199,5 +212,64 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
     // force reserves to match balances
     function sync() external lock {
         _update(IERC20(token0).balanceOf(address(this)), IERC20(token1).balanceOf(address(this)), reserve0, reserve1);
+    }
+
+    function uint2str(uint _i) internal pure returns (string memory _uintAsString) {
+        if (_i == 0) {
+            return "0";
+        }
+        uint j = _i;
+        uint len;
+        while (j != 0) {
+            len++;
+            j /= 10;
+        }
+        bytes memory bstr = new bytes(len);
+        uint k = len - 1;
+        while (_i != 0) {
+            bstr[k--] = byte(uint8(48 + _i % 10));
+            _i /= 10;
+        }
+        return string(bstr);
+    }
+
+    function strConcat(string memory _a, string memory _b) internal pure returns (string memory _concatenatedString) {
+        return strConcat(_a, _b, "", "", "");
+    }
+
+    function strConcat(string memory _a, string memory _b, string memory _c) internal pure returns (string memory _concatenatedString) {
+        return strConcat(_a, _b, _c, "", "");
+    }
+
+    function strConcat(string memory _a, string memory _b, string memory _c, string memory _d) internal pure returns (string memory _concatenatedString) {
+        return strConcat(_a, _b, _c, _d, "");
+    }
+
+    function strConcat(string memory _a, string memory _b, string memory _c, string memory _d, string memory _e) internal pure returns (string memory _concatenatedString) {
+        bytes memory _ba = bytes(_a);
+        bytes memory _bb = bytes(_b);
+        bytes memory _bc = bytes(_c);
+        bytes memory _bd = bytes(_d);
+        bytes memory _be = bytes(_e);
+        string memory abcde = new string(_ba.length + _bb.length + _bc.length + _bd.length + _be.length);
+        bytes memory babcde = bytes(abcde);
+        uint k = 0;
+        uint i = 0;
+        for (i = 0; i < _ba.length; i++) {
+            babcde[k++] = _ba[i];
+        }
+        for (i = 0; i < _bb.length; i++) {
+            babcde[k++] = _bb[i];
+        }
+        for (i = 0; i < _bc.length; i++) {
+            babcde[k++] = _bc[i];
+        }
+        for (i = 0; i < _bd.length; i++) {
+            babcde[k++] = _bd[i];
+        }
+        for (i = 0; i < _be.length; i++) {
+            babcde[k++] = _be[i];
+        }
+        return string(babcde);
     }
 }
